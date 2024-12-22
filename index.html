@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Lighthouse - Advanced PageSpeed Insights Demo</title>
-    <meta name="description" content="An advanced demo showcasing PageSpeed Insights API usage, optimization techniques, and web performance best practices.">
-    <meta name="keywords" content="PageSpeed Insights, Web Performance, Optimization, Lighthouse">
+    <title>Web Lighthouse - Advanced Web Performance Analysis Tool</title>
+    <meta name="description" content="Web Lighthouse is a powerful tool for analyzing and improving web performance, accessibility, SEO, and best practices using the PageSpeed Insights API.">
+    <meta name="keywords" content="Web Performance, PageSpeed Insights, Lighthouse, SEO, Accessibility, Best Practices">
     <meta name="author" content="Your Name">
     <link rel="canonical" href="https://rektsheikh.github.io/web-Lighthouse/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rektsheikh.github.io/web-Lighthouse/">
-    <meta property="og:title" content="Web Lighthouse - Advanced PageSpeed Insights Demo">
-    <meta property="og:description" content="An advanced demo showcasing PageSpeed Insights API usage, optimization techniques, and web performance best practices.">
+    <meta property="og:title" content="Web Lighthouse - Advanced Web Performance Analysis Tool">
+    <meta property="og:description" content="Analyze and improve your website's performance, accessibility, SEO, and best practices with Web Lighthouse.">
     <meta property="og:image" content="https://rektsheikh.github.io/web-Lighthouse/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://rektsheikh.github.io/web-Lighthouse/">
-    <meta property="twitter:title" content="Web Lighthouse - Advanced PageSpeed Insights Demo">
-    <meta property="twitter:description" content="An advanced demo showcasing PageSpeed Insights API usage, optimization techniques, and web performance best practices.">
+    <meta property="twitter:title" content="Web Lighthouse - Advanced Web Performance Analysis Tool">
+    <meta property="twitter:description" content="Analyze and improve your website's performance, accessibility, SEO, and best practices with Web Lighthouse.">
     <meta property="twitter:image" content="https://rektsheikh.github.io/web-Lighthouse/twitter-image.jpg">
 
     <!-- Favicon -->
@@ -31,62 +31,106 @@
 
     <!-- Preconnect to required origins -->
     <link rel="preconnect" href="https://www.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="manifest.json">
-
-    <!-- Theme Color for mobile browsers -->
-    <meta name="theme-color" content="#1a73e8">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Web Lighthouse",
+      "description": "Advanced Web Performance Analysis Tool",
+      "url": "https://rektsheikh.github.io/web-Lighthouse/",
+      "applicationCategory": "WebApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0"
+      }
+    }
+    </script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
-    <header class="bg-blue-600 text-white py-4">
-        <div class="container mx-auto px-4">
-            <h1 class="text-3xl font-bold">Web Lighthouse</h1>
-            <p class="text-xl">Advanced PageSpeed Insights Demo</p>
-        </div>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1><a href="/">Web Lighthouse</a></h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#analyze">Analyze</a></li>
+                    <li><a href="#history">History</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
-        <section id="url-input" class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Analyze URL</h2>
-            <form id="url-form" class="flex gap-4">
-                <input type="url" id="url-to-test" placeholder="Enter URL to test" required
-                    class="flex-grow p-2 border border-gray-300 rounded">
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-                    Analyze
-                </button>
-            </form>
-        </section>
-
-        <section id="results" class="hidden">
-            <h2 class="text-2xl font-semibold mb-4">Results</h2>
-            <div id="loading" class="text-center py-8 hidden">
-                <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
-                <p class="mt-2">Analyzing...</p>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Advanced Web Performance Analysis Tool</h2>
+                <p>Analyze and improve your website's performance, accessibility, SEO, and best practices with Web Lighthouse.</p>
+                <a href="#analyze" class="cta-button">Start Analysis</a>
             </div>
-            <div id="results-content"></div>
         </section>
 
-        <section id="history" class="mt-8">
-            <h2 class="text-2xl font-semibold mb-4">Recent Analyses</h2>
-            <ul id="history-list" class="space-y-2"></ul>
+        <section id="about">
+            <div class="container">
+                <h2>About Web Lighthouse</h2>
+                <p>Web Lighthouse is a powerful tool that leverages the PageSpeed Insights API to provide comprehensive analysis of web pages. Our tool helps developers, marketers, and site owners improve their websites by identifying issues and suggesting optimizations.</p>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Real-time performance analysis</li>
+                    <li>Accessibility audits</li>
+                    <li>SEO optimization suggestions</li>
+                    <li>Best practices recommendations</li>
+                    <li>Historical data tracking</li>
+                    <li>Mobile and desktop analysis</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="analyze">
+            <div class="container">
+                <h2>Analyze Your Website</h2>
+                <form id="analysis-form">
+                    <input type="url" id="url-input" placeholder="Enter website URL" required>
+                    <select id="device-type">
+                        <option value="mobile">Mobile</option>
+                        <option value="desktop">Desktop</option>
+                    </select>
+                    <button type="submit">Analyze</button>
+                </form>
+                <div id="loading" class="hidden">Analyzing... Please wait.</div>
+                <div id="results" class="hidden"></div>
+            </div>
+        </section>
+
+        <section id="history">
+            <div class="container">
+                <h2>Analysis History</h2>
+                <ul id="history-list"></ul>
+            </div>
         </section>
     </main>
 
-    <footer class="bg-gray-200 py-4 mt-8">
-        <div class="container mx-auto px-4 text-center">
+    <footer>
+        <div class="container">
             <p>&copy; 2023 Web Lighthouse. All rights reserved.</p>
+            <ul>
+                <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="/terms-of-service.html">Terms of Service</a></li>
+            </ul>
         </div>
     </footer>
 
-    <script src="js/main.js" type="module"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
-
