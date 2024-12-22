@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /api/
+Disallow: /js/
+Disallow: /css/
 
 Sitemap: https://rektsheikh.github.io/web-Lighthouse/sitemap.xml
 
