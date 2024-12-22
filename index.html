@@ -1,23 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PageSpeed Analyzer</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Lighthouse - Advanced PageSpeed Insights Demo</title>
+    <meta name="description" content="An advanced demo showcasing PageSpeed Insights API usage, optimization techniques, and web performance best practices.">
+    <meta name="keywords" content="PageSpeed Insights, Web Performance, Optimization, Lighthouse">
+    <meta name="author" content="Your Name">
+    <link rel="canonical" href="https://rektsheikh.github.io/web-Lighthouse/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rektsheikh.github.io/web-Lighthouse/">
+    <meta property="og:title" content="Web Lighthouse - Advanced PageSpeed Insights Demo">
+    <meta property="og:description" content="An advanced demo showcasing PageSpeed Insights API usage, optimization techniques, and web performance best practices.">
+    <meta property="og:image" content="https://rektsheikh.github.io/web-Lighthouse/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rektsheikh.github.io/web-Lighthouse/">
+    <meta property="twitter:title" content="Web Lighthouse - Advanced PageSpeed Insights Demo">
+    <meta property="twitter:description" content="An advanced demo showcasing PageSpeed Insights API usage, optimization techniques, and web performance best practices.">
+    <meta property="twitter:image" content="https://rektsheikh.github.io/web-Lighthouse/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Preconnect to required origins -->
+    <link rel="preconnect" href="https://www.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Theme Color for mobile browsers -->
+    <meta name="theme-color" content="#1a73e8">
 </head>
-<body>
-  <header>
-    <h1>PageSpeed Analyzer</h1>
-    <p>Analyze your website's performance, accessibility, and SEO with ease.</p>
-  </header>
-  <main>
-    <form id="analyzeForm">
-      <input type="url" id="urlInput" placeholder="Enter website URL" required>
-      <button type="submit">Analyze</button>
-    </form>
-    <div id="results"></div>
-  </main>
-  <script src="scripts/main.js"></script>
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">Web Lighthouse</h1>
+            <p class="text-xl">Advanced PageSpeed Insights Demo</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="url-input" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Analyze URL</h2>
+            <form id="url-form" class="flex gap-4">
+                <input type="url" id="url-to-test" placeholder="Enter URL to test" required
+                    class="flex-grow p-2 border border-gray-300 rounded">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+                    Analyze
+                </button>
+            </form>
+        </section>
+
+        <section id="results" class="hidden">
+            <h2 class="text-2xl font-semibold mb-4">Results</h2>
+            <div id="loading" class="text-center py-8 hidden">
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
+                <p class="mt-2">Analyzing...</p>
+            </div>
+            <div id="results-content"></div>
+        </section>
+
+        <section id="history" class="mt-8">
+            <h2 class="text-2xl font-semibold mb-4">Recent Analyses</h2>
+            <ul id="history-list" class="space-y-2"></ul>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Web Lighthouse. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>
+
